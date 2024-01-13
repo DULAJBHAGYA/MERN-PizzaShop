@@ -5,7 +5,7 @@ import { AiFillInstagram, AiOutlineSend} from "react-icons/ai";
 
 const Footer = () => {
   return (
-    <footer className='bg-[#F6F0F0] pt-10 pb-10 px-20 ' style={{ fontFamily: 'Poppins' }}>
+    <footer className='bg-[#F6F0F0] pt-10 pb-10 px-20 mt-40' style={{ fontFamily: 'Poppins' }}>
         {/*===========footer top=========*/}
         <div className='container'>
           <div className='sm:flex items-center justify-between md:gap-8'>
