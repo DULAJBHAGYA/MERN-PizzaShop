@@ -2,12 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaCheck, FaPhoneAlt} from "react-icons/fa";
 import { RiEBike2Fill } from "react-icons/ri";
+import Services from "./Services";
+import Footer from "../components/Footer";
+import HomeMenu from "./HomeMenu";
 
 
 const Home = () => {
   return (
     <section className='pt-0' id='about'>
-      <div className="className='max-width-2xl container mx-auto xl:px-24 px-4 mt-10">
+      <div className="max-width-2xl container mx-auto xl:px-24 px-4 mt-10">
         <div className='md:flex items-center justify-between sm:flex-col md:flex-row'>
 
           {/* ======= home left content ======= */}
@@ -67,6 +70,9 @@ const Home = () => {
           
         </div>
       </div>
+      <Services/>
+      <HomeMenu/>
+      <Footer/>
     </section>
   )
 }
