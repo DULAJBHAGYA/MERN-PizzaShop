@@ -5,6 +5,7 @@ import { RiEBike2Fill } from "react-icons/ri";
 import Services from "./Services";
 import Footer from "../components/Footer";
 import HomeMenu from "./HomeMenu";
+import HomeFeedback from "./HomeFeedback";
 
 
 const Home = () => {
@@ -72,6 +73,7 @@ const Home = () => {
       </div>
       <Services/>
       <HomeMenu/>
+      <HomeFeedback/>
       <Footer/>
     </section>
   )

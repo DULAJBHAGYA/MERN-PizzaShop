@@ -10,11 +10,7 @@ const Services = () => {
         <p className='text-5xl font-bold text-black text-center mt-5 mb-10' style={{ fontFamily: 'Poppins' }}>Fast, Fresh, and Always <br/>
         Your Favorite Food Delivery Partner</p>
 
-        <div className='flex flex-row justify-center gap-32'>
         <ServiceCard/>
-        <ServiceCard/>
-        <ServiceCard/>  
-        </div>
     </div>
   )
 }
