@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaChevronLeft,FaChevronRight } from "react-icons/fa";
+
 
 const HomeMenu = () => {
   return (
@@ -85,9 +87,40 @@ const HomeMenu = () => {
 
 
         </div>
-    </div>
+        
+        <div className='w-full ml-60 md:w-4/6 mt-10 mb-10 '>
+
+        <div className='flex flex-row  mb-5 mt-2 space-x-2'>
+        <span className='flex ml-auto'>
+        <span className='w-[50px] h-[50px] bg-primary p-1 rounded-[50px] flex items-center justify-center text-white text-2xl cursor-pointer mx-2'>
+        <FaChevronLeft/>
+        </span>
+        </span>
+
+        <span className='flex ml-auto'>
+        <span className='w-[50px] h-[50px] bg-primary p-1 rounded-[50px] flex items-center justify-center text-white text-2xl cursor-pointer mx-2'>
+        <FaChevronRight/>
+        </span>
+        </span>
+      </div>
+
+
+        <div className='flex flex-row h-80'>
+        <div className='border-2 w-full ml-10 md:w-1/3 border-gray rounded-xl'>
+        </div>
+
+        <div className='border-2 w-full ml-10 md:w-1/3 border-gray rounded-xl'>
+        </div>
+
+        <div className='border-2 w-full ml-10 md:w-1/3 border-gray rounded-xl'>
+        </div>
+
+        </div>
+        </div>
+        </div>
 
     </div>
+
   )
 }
 
