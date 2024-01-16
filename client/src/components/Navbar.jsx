@@ -20,7 +20,7 @@
         
     
       return (
-        <header className='max-width-2xl container mx-auto xl:px-24 px-4'>
+        <header className='max-width-2xl position:sticky container mx-auto xl:px-24 px-4'>
             <nav className='flex justify-between items-center py-6'>
             <a href='/' className='flex  items-center gap-2 text-xl text-black'>
             <img src='/images/Logo.png' alt='Description of the image' width={150}/></a>

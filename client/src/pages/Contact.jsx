@@ -2,19 +2,21 @@ import React from 'react';
 import Footer from '../components/Footer';
 import { FaPhone, FaLocationDot } from "react-icons/fa6";
 import { IoMail } from "react-icons/io5";
+import Navbar from '../components/Navbar';
 
 
 const Contact = () => {
   return (
     <section>
-    <div className="max-width-2xl container mx-auto xl:px-24 px-4 mt-10">
+    <Navbar/>
+    <div className="max-width-2xl container mx-auto xl:px-24 px-4 mt-10" style={{ fontFamily: 'Poppins' }}>
 
     <div>
     <h1 className='text-3xl font-bold text-primary text-start'>
     LET'S KEEP IN TOUCH
     </h1>
 
-    <p className='text-5xl font-bold text-black text-start '>Our Contacts</p>
+    <p className='text-6xl font-bold text-black text-start '>Our Contacts</p>
 
     <div className='flex flex-row'>
     <div className='w-full md:w-2/5 mt-10'>
@@ -58,12 +60,12 @@ const Contact = () => {
 
     </div>
 
-    <div className='mt-20'>
+    <div className='mt-40'>
     <h1 className='text-3xl font-bold text-primary text-start'>
     FIND US ON GOOGLE MAPS    
     </h1>
 
-    <p className='text-5xl font-bold text-black text-start '>We Are Here</p>
+    <p className='text-6xl font-bold text-black text-start '>We Are Here</p>
 
     <div className='border-3 border-black w-full mt-10 h-80'>
     </div>
