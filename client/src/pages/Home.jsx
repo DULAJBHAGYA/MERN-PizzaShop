@@ -6,11 +6,13 @@ import Services from "./Services";
 import Footer from "../components/Footer";
 import HomeMenu from "./HomeMenu";
 import HomeFeedback from "./HomeFeedback";
+import Navbar from "../components/Navbar";
 
 
 const Home = () => {
   return (
     <section className='pt-0' id='about'>
+    <Navbar/>
       <div className="max-width-2xl container mx-auto xl:px-24 px-4 mt-10">
         <div className='md:flex items-center justify-between sm:flex-col md:flex-row'>
 
