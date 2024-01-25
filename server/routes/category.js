@@ -37,5 +37,45 @@ router.get('/categories', async (req, res) => {
   }
 });
 
+///update category
+router.put('/category/update/:id', async (req, res) => {
+  try {
+    const updatedPost = await Posts.findByIdAndUpdate(
+      req.params.id,
+      { $set: req.body },
+      { new: true } 
+    );
+
+    if (!updatedPost) {
+      return res.status(404).json({ error: "Post not found" });
+    }
+
+    return res.status(200).json({
+      success: "Updated successfully",
+      data: updatedPost
+    });
+  } catch (err) {
+    return res.status(400).json({ error: err.message });
+  }
+});
+
+//delete category
+router.delete('/category/delete/:id', async (req, res) => {
+  try {
+    const deletedPost = await Posts.findByIdAndDelete(req.params.id);
+
+    if (!deletedPost) {
+      return res.status(404).json({ error: "Post not found" });
+    }
+
+    return res.status(200).json({
+      success: "Deleted successfully",
+      data: deletedPost
+    });
+  } catch (err) {
+    return res.status(500).json({ error: err.message });
+  }
+});
+
 
 module.exports = router;

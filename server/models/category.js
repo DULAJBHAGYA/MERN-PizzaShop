@@ -13,6 +13,10 @@ const categorySchema = new mongoose.Schema({
     category_desc:{
         type:String,
         required:true
+    },
+    category_img:{
+        type:String,
+        required:true
     }
 });
 
